@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Projectify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="lgo-title-nobg" translatesAutoresizingMaskIntoConstraints="NO" id="6zX-6c-xHZ">
+                                <rect key="frame" x="101.66666666666669" y="194" width="225" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="BXY-XG-2om"/>
+                                    <constraint firstAttribute="height" constant="225" id="ZDy-Au-6Rp"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1nI-3c-XzN">
+                                <rect key="frame" x="68" y="464" width="292" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="92F-kn-BCn">
+                                <rect key="frame" x="68" y="528" width="292" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kr1-ns-deg">
+                                <rect key="frame" x="128.66666666666666" y="592" width="170.99999999999997" height="62"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="login-button"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="New user_" translatesAutoresizingMaskIntoConstraints="NO" id="wNi-5y-KkJ">
+                                <rect key="frame" x="172.66666666666666" y="724" width="83" height="14"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwa-cr-Xhj">
+                                <rect key="frame" x="143.66666666666666" y="753" width="140.99999999999997" height="89"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="register-button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="92F-kn-BCn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Z1-rm-DNq"/>
+                            <constraint firstItem="92F-kn-BCn" firstAttribute="top" secondItem="1nI-3c-XzN" secondAttribute="bottom" constant="30" id="GAI-XJ-v1R"/>
+                            <constraint firstItem="wNi-5y-KkJ" firstAttribute="top" secondItem="Kr1-ns-deg" secondAttribute="bottom" constant="70" id="HX1-zU-tna"/>
+                            <constraint firstItem="rwa-cr-Xhj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KsO-ni-TjJ"/>
+                            <constraint firstItem="1nI-3c-XzN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LBJ-aR-MO7"/>
+                            <constraint firstItem="Kr1-ns-deg" firstAttribute="top" secondItem="92F-kn-BCn" secondAttribute="bottom" constant="30" id="MNQ-Pd-1sC"/>
+                            <constraint firstItem="1nI-3c-XzN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="N15-Iy-uz4"/>
+                            <constraint firstItem="6zX-6c-xHZ" firstAttribute="top" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="Tqn-mL-hkw"/>
+                            <constraint firstItem="rwa-cr-Xhj" firstAttribute="top" secondItem="wNi-5y-KkJ" secondAttribute="bottom" constant="15" id="Y6s-nz-2Nw"/>
+                            <constraint firstItem="92F-kn-BCn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="ZBZ-vN-84R"/>
+                            <constraint firstItem="wNi-5y-KkJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kMP-Z2-UdF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rwa-cr-Xhj" secondAttribute="bottom" constant="50" id="lyP-b2-i7M"/>
+                            <constraint firstItem="1nI-3c-XzN" firstAttribute="top" secondItem="6zX-6c-xHZ" secondAttribute="bottom" constant="45" id="nAB-W3-z74"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1nI-3c-XzN" secondAttribute="trailing" constant="68" id="p3r-qH-vTI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="92F-kn-BCn" secondAttribute="trailing" constant="68" id="riE-rw-wC4"/>
+                            <constraint firstItem="Kr1-ns-deg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uRf-PV-aEb"/>
+                            <constraint firstItem="6zX-6c-xHZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wAB-0w-bHb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="New user_" width="83" height="14"/>
+        <image name="lgo-title-nobg" width="500" height="500"/>
+        <image name="login-button" width="147" height="48"/>
+        <image name="register-button" width="117" height="48"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
