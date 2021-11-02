@@ -1,0 +1,62 @@
+.div-login
+{
+    width: 500px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    background-color: #E2E2E2;
+    padding: 10px;
+    margin-top: 10vh;
+    align-items: center;
+    border-radius: 7% / 5%;
+}
+
+.div-form
+{
+    align-items: center;
+}
+
+.logo-img
+{
+    height: 220px;
+    width: 220px;
+    align-items: center;
+}
+
+.form-group
+{
+    height: 50px;
+    width: auto;
+    align-items: center;
+}
+
+input
+{
+    border: 2px solid #2980BA;
+    border-color: #2980BA;
+    border-radius: 5% / 25%;
+    text-align: center;
+}
+
+input:focus
+{
+    outline: none;
+    border-color: #2980BA !important;
+}
+
+button
+{
+    border-style: none;
+    background-color: #E2E2E2;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.new-user-div
+{
+    color: #2980BA;
+    margin-top: 30px;
+    text-align: center;
+}
