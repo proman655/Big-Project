@@ -2,9 +2,11 @@ import React from 'react';
 import Logo from '../pictures/logo-title-nobg.png'
 import LoginButton from '../pictures/login-button.png'
 import RegisterButton from '../pictures/register-button.png'
+import { Link } from 'react-router-dom';
 import './login.css'
 
 class Login extends React.Component {
+
 
     state = {
         email:'',
@@ -26,7 +28,7 @@ class Login extends React.Component {
                 <div className='div-login-logo'>
                     <img src={Logo} alt='logo' className='logo-img'/>
                 </div>
-                <div className='div-form'>
+                <div className='div-login-form'>
                     <form onSubmit> 
                         <div className='form-group'>
                             <input type='email' name='email' placeholder='Email' required onChange={this.handleChange}></input>
@@ -40,9 +42,11 @@ class Login extends React.Component {
                         <div className='new-user-div'>
                             <p>New User?</p>
                         </div>
-                        <button>
-                            <img src={RegisterButton} alt='register' className='register-button' />
-                        </button>
+                        <Link to='/register'>
+                            <button> 
+                                <img src={RegisterButton} alt='register' className='register-button' />
+                            </button>
+                        </Link>
                     </form>
                 </div>
             </div>
