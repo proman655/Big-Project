@@ -1,4 +1,4 @@
-.div-login
+.div-register
 {
     width: 500px;
     height: 700px;
@@ -13,9 +13,9 @@
     border-radius: 7% / 5%;
 }
 
-.div-login-form
+.div-register-form
 {
-    width: 220px;
+    width: 260px;
     align-items: center;
 }
 
@@ -30,7 +30,7 @@
 {
     height: 50px;
     width: auto;
-    align-items: center;
+    align-items: center !important;
 }
 
 input
@@ -43,16 +43,15 @@ input
     text-align: center;
 }
 
-::placeholder
+.input::placeholder
 {
     color: #2980BA;
 }
 
-::-ms-input-placeholder 
+.input::-ms-input-placeholder 
 {
     color: #2980BA;
 }
-
 
 input:focus
 {
@@ -68,9 +67,12 @@ button
     margin: 0 auto;
 }
 
-.new-user-div
+.buttons-div
 {
-    color: #2980BA;
-    margin-top: 30px;
-    text-align: center;
+    display: flex;
+}
+
+.cancel-button
+{
+    flex: 1;
 }
