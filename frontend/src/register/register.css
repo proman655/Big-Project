@@ -35,11 +35,22 @@
 
 input
 {
+    color: #2980BA;
     width: 100%;
     border: 2px solid #2980BA;
     border-color: #2980BA;
-    border-radius: 3% / 25%;
+    border-radius: 7% / 50%;
     text-align: center;
+}
+
+.input::placeholder
+{
+    color: #2980BA;
+}
+
+.input::-ms-input-placeholder 
+{
+    color: #2980BA;
 }
 
 input:focus
