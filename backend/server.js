@@ -12,4 +12,6 @@ app.listen(5000, console.log('Server started on PORT 5000'));
 app.get("/", (req, res) => {
     res.send("API is running..");
 });
+
 app.use('/api/User', UserRoutes);
+app.use('/api/login', UserRoutes);
