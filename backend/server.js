@@ -13,5 +13,5 @@ app.get("/", (req, res) => {
     res.send("API is running..");
 });
 
-app.use('/api/User', UserRoutes);
-app.use('/api/login', UserRoutes);
+app.use('/api/user', UserRoutes);
+
