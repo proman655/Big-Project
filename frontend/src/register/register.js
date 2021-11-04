@@ -28,24 +28,24 @@ class Register extends React.Component {
         return (
             <div className='div-register'>
                 <div className='div-register-logo'>
-                    <img src={Logo} alt='logo' className='logo-img'/>
+                    <img src={Logo} alt='logo' className='logo-img' />
                 </div>
                 <div className='div-register-form'>
                     <form onSubmit>
-                        <div className='form-group'>
-                            <input type='text' name='firstName' placeholder='First name' required onChange={this.handleChange}></input>
+                        <div className='register-form-group'>
+                            <input type='text' name='firstName' placeholder='First name' className='register-input' required onChange={this.handleChange}></input>
                         </div>
-                        <div className='form-group'>
-                            <input type='text' name='lastName' placeholder='Last name' required onChange={this.handleChange}></input>
+                        <div className='register-form-group'>
+                            <input type='text' name='lastName' placeholder='Last name' className='register-input' required onChange={this.handleChange}></input>
                         </div>
-                        <div className='form-group'>
-                            <input type='email' name='email' placeholder='Email' required onChange={this.handleChange}></input>
+                        <div className='register-form-group'>
+                            <input type='email' name='email' placeholder='Email' className='register-input' required onChange={this.handleChange}></input>
                         </div>
-                        <div className='form-group'>
-                            <input type='password' name='password' placeholder='Password' required onChange={this.handleChange}></input>
+                        <div className='register-form-group'>
+                            <input type='password' name='password' placeholder='Password' className='register-input' required onChange={this.handleChange}></input>
                         </div>
-                        <div className='form-group'>
-                            <input type='password' name='passwordRepeat' placeholder='Repeat password' required onChange={this.handleChange}></input>
+                        <div className='register-form-group'>
+                            <input type='password' name='passwordRepeat' placeholder='Repeat password' className='register-input' required onChange={this.handleChange}></input>
                         </div>
                         <div className='buttons-div'>
                             <Link to='/'>
