@@ -7,11 +7,10 @@ const UserRoutes = require("./routes/userRoutes");
 dotenv.config();
 connectDB();
 app.use(express.json());
-app.listen(5000, console.log('Server started on PORT 5000'));
+app.listen(5000, console.log("Server started on PORT 5000"));
 
 app.get("/", (req, res) => {
-    res.send("API is running..");
+  res.send("API is running..");
 });
 
-app.use('/api/user', UserRoutes);
-
+app.use("/api/user", UserRoutes);
