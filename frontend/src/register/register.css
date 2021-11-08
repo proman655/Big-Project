@@ -79,3 +79,10 @@ button
 {
     flex: 1;
 }
+
+#register-status
+{
+    color: #FF5364;
+    font-weight: bold;
+    text-align: center;
+}

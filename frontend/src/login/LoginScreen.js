@@ -35,6 +35,7 @@ const LoginScreen = () => {
         window.location.href = "http://localhost:3000/home";
       }
     } catch (error) {
+      document.getElementById("login-status").innerHTML = "Email/password incorrect";
       console.log("ERROR");
     }
   };
@@ -70,6 +71,9 @@ const LoginScreen = () => {
           <button onSubmit={submitHandler}>
             <img src={LoginButton} alt="login" className="login-button" />
           </button>
+          
+          <p id='login-status'></p>
+          
           <div className="new-user-div">
             <p>New User?</p>
           </div>
