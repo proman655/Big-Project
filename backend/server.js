@@ -25,7 +25,7 @@ app.listen(port, () => console.log(`Server started on ${port}`));
 
 //base
 app.get("/", (req, res) => {
-  res.send("API is running..");
+  res.sendFile("login/LoginScreen.js");
 });
 
 app.use("/api/user", UserRoutes);
