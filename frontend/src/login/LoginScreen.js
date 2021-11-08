@@ -7,7 +7,7 @@ import "./login.css";
 import axios from "axios";
 
 const LoginScreen = () => {
-  const [email, setEmail] = useState("");
+  const [Email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const submitHandler = async (e) => {
@@ -21,13 +21,15 @@ const LoginScreen = () => {
       };
 
       const { data } = await axios.post(
-        "/api/user/login",
+        "http://localhost:5000/api/user/login",
         {
-          email,
+          Email,
           password,
         },
         config
       );
+
+      localStorage.setItem("userInfo", JSON.stringify(data));
       console.log(data);
     } catch (error) {
       console.log("ERROR");
@@ -44,7 +46,7 @@ const LoginScreen = () => {
             <input
               type="email"
               name="email"
-              value={email}
+              value={Email}
               placeholder="Email"
               className="login-input"
               required

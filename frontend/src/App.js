@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "./home/home.js";
 import Login from "./login/LoginScreen.js";
-import Register from "./register/register.js";
+import Register from "./register/RegisterScreen.js";
 //import './App.css';
 
 class App extends React.Component {
