@@ -26,9 +26,9 @@ app.use((req, res, next) => {
 });
 
 //base
-app.get("/", (req, res) => {
-  res.send("API is running..");
-});
+//app.get("/", (req, res) => {
+  //res.sendFile("API is running..");
+//});
 
 app.use("/api/user", UserRoutes);
 app.use("/api/project", ProjectRoutes);
