@@ -31,6 +31,9 @@ const LoginScreen = () => {
 
       localStorage.setItem("userInfo", JSON.stringify(data));
       console.log(data);
+      if (data) {
+        window.location.href = "http://localhost:3000/home";
+      }
     } catch (error) {
       console.log("ERROR");
     }

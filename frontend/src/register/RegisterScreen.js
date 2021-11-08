@@ -40,6 +40,9 @@ const RegisterScreen = () => {
         );
         console.log(data);
         localStorage.setItem("userInfo", JSON.stringify(data));
+        if (data) {
+          window.location.href = "http://localhost:3000/";
+        }
       } catch (error) {
         console.log("ERROR");
       }

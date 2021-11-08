@@ -17,14 +17,9 @@ class App extends React.Component {
     return (
       <div>
         <Switch>
-          <Route
-            exact
-            path="/"
-            render={() =>
-              !isLog ? <Login isLogin={this.handleLogin} /> : <Home />
-            }
-          />
-          <Route exact pathh="/register" component={Register}></Route>
+          <Route exact path="/" component={Login}></Route>
+          <Route exact path="/home" component={Home}></Route>
+          <Route exact path="/register" component={Register}></Route>
         </Switch>
       </div>
     );
