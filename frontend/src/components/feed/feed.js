@@ -22,19 +22,19 @@ const Feed = () => {
                 <Row xs={1} md={3} className="g-4">
                     {Array.from({ length: 3}).map((_, idx) => (
                         <Col>
-                            <Card>
-                                <Card.Img variant="top" src={Placehholder}/>
+                            <Card className="card">
+                                <Card.Img variant="top" src={Placehholder} className="card-picture"/>
                                 <Card.Header>
                                     <small className="text-muted">Date due 12/01/2021</small>
                                 </Card.Header>
-                                <Card.Body>
+                                <Card.Body className="card-body">
                                     <Card.Title>Project Title</Card.Title>
                                     <Card.Text>
                                         This is a longer card with supporting text below as a natural
                                         lead-in to additional content. This content is a little bit longer.
                                     </Card.Text>
                                 </Card.Body>
-                                <Card.Footer>
+                                <Card.Footer className="card-footer">
                                     <small className="text-muted">5 Members</small>
                                 </Card.Footer>
                             </Card>

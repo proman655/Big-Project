@@ -1,3 +1,18 @@
+.navbar
+{
+    background-color: #E2E2E2 !important;
+}
+
+.navbar-item
+{
+    color: #2980BA !important;
+}
+
+#navbarScrollingDropdown
+{
+    color: #2980BA !important;
+}
+
 .header-logo-img
 {
     width: 45px;

@@ -27,6 +27,32 @@
     margin-top: 20px;
 }
 
+.card
+{
+    cursor:pointer;
+    border-width: 4px;;
+    border-color: #E2E2E2;
+    border-radius: 24px;
+}
+
+.card-picture
+{
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+
+.card-body
+{
+    color: #2980BA;
+}
+
+.card-footer
+{
+    border-bottom-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+
+
 .add-button-div
 {
     margin-top: 50px;

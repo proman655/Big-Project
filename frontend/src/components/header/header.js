@@ -11,7 +11,7 @@ import './header.css'
 
 const Header = () => {
     return(
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="lg" className="navbar">
             <Container fluid>
                 <Navbar.Brand href="#">
                     <img src={Logo} alt='logo' className='header-logo-img'/>
@@ -19,12 +19,12 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="navbarScroll"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#action1">Projects</Nav.Link>
-                        <Nav.Link href="#action2">Tasks</Nav.Link>
-                        <Nav.Link href="#action3">Profile</Nav.Link>
-                        <NavDropdown title="Settings" id="navbarScrollingDropdown">
-                            <NavDropdown.Item href="#action3">Language</NavDropdown.Item>
-                            <NavDropdown.Item><Link to="/">Logout</Link></NavDropdown.Item>
+                        <Nav.Link href="#action1" className="navbar-item">Projects</Nav.Link>
+                        <Nav.Link href="#action2" className="navbar-item">Tasks</Nav.Link>
+                        <Nav.Link href="#action3" className="navbar-item">Profile</Nav.Link>
+                        <NavDropdown title="Settings"  id="navbarScrollingDropdown">
+                            <NavDropdown.Item href="#action3" className="navbar-item">Language</NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/" className="navbar-item">Logout</Link></NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
