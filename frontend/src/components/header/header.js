@@ -24,7 +24,7 @@ const Header = () => {
                         <Nav.Link href="#action3">Profile</Nav.Link>
                         <NavDropdown title="Settings" id="navbarScrollingDropdown">
                             <NavDropdown.Item href="#action3">Language</NavDropdown.Item>
-                            <NavDropdown.Item href="#action4">Logout</NavDropdown.Item>
+                            <NavDropdown.Item><Link to="/">Logout</Link></NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
@@ -32,5 +32,4 @@ const Header = () => {
         </Navbar>
     )
 }
-
 export default Header;

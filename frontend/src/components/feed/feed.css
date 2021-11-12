@@ -1,0 +1,44 @@
+.feed-container
+{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.edit-button-div
+{
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+}
+
+#edit-button
+{
+    background: url(../../pictures/edit-button.png) no-repeat;;
+    width: 85px;
+    height: 50px;
+    cursor:pointer;
+    border:none;
+}
+
+.cards-div
+{
+    position: relative;
+    margin-top: 20px;
+}
+
+.add-button-div
+{
+    margin-top: 50px;
+    float: right;
+}
+
+#add-button
+{
+    position: relative;
+    background: url(../../pictures/add-button.png) no-repeat;;
+    width: 100px;
+    height: 100px;
+    cursor:pointer;
+    border:none;
+}
