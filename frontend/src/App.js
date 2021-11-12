@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./home/home.js";
 import Login from "./login/LoginScreen.js";
 import Register from "./register/RegisterScreen.js";
+import 'bootstrap/dist/css/bootstrap.min.css';
 //import './App.css';
 
 class App extends React.Component {

@@ -129,7 +129,7 @@ const RegisterScreen = () => {
          
           <div className="buttons-div">
             <Link to="/">
-              <button renderAs="button" className="cancel-button">
+              <button renderas="button" className="cancel-button">
                 <img
                   src={CancelButton}
                   alt="cancel"
