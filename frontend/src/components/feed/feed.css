@@ -68,3 +68,76 @@
     cursor:pointer;
     border:none;
 }
+
+.modal-header
+{
+    color: #FFF;
+    background-color: #2980BA;
+}
+
+.modal-body
+{
+    background-color: #E2E2E2;
+}
+
+.modal-footer
+{
+    background-color: #E2E2E2;
+
+}
+
+.modal.card-body
+{
+    align-content: center !important;
+    align-items: center !important;
+}
+
+.new-project-form
+{
+    align-content: center !important;
+    align-items: center !important;
+}
+
+.new-project-form-group
+{
+    height: 50px;
+    width: auto;
+    margin-left: 60px;
+    margin-right: 60px;
+    align-items: center;
+}
+
+.new-project-form-group-box
+{
+    height: 100px;
+    width: auto;
+    margin-left: 60px;
+    margin-right: 60px;
+    align-items: center;
+}
+
+
+.new-project-input
+{
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    color: #2980BA;
+    border: 2px solid #2980BA;
+    border-color: #2980BA;
+    border-radius: 5% / 50%;
+    text-align: center;
+}
+
+#textBox
+{
+    height: 100px;
+    border-radius: 7% /25%;
+    border: 2px solid #2980BA;
+    border-color: #2980BA;
+}
+
+#input::placeholder
+{
+    color: #2980BA;
+}
