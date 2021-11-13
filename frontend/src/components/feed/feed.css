@@ -61,7 +61,8 @@
 
 .modal-content
 {
-    border-radius: 22px;
+    border-radius: 23px;
+    border: 2px solid #2980BA;
 }
 
 #add-button
