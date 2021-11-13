@@ -29,28 +29,34 @@ function MyVerticallyCenteredModal(props) {
             </Modal.Header>
             <Modal.Body className="modal-body">
                 <Form className="new-project-form">
-                    <div className="new-project-form-group">
-                        <input type="text" name="Title" placeholder="Title" className="new-project-input"></input>
-                    </div>
-                    <div className="new-project-form-group">
-                        <input type="text" name="Project Manager" placeholder="Project manager" className="new-project-input"></input>
-                    </div>
-                    <div className="new-project-form-group">
-                        <input type="date" name="dueDate" className="new-project-input"></input>
-                    </div>
-                    <div className="new-project-form-group">
-                        <select aria-label="Default select example" className="new-project-input">
+                    <Form.Group className="mb-3">
+                        <Form.Label >Title</Form.Label>
+                        <Form.Control type="text" name="Title"/>
+                    </Form.Group>
+                    <Form.Group className="mb-3">
+                        <Form.Label>Members</Form.Label>
+                        <Form.Select aria-label="Default select example" name="Members">
                             <option>None</option>
                             <option value="1">Tev</option>
                             <option value="2">Chris</option>
                             <option value="3">Gus</option>
                             <option value="3">Pedro</option>
-                        </select>
-                    </div>
-                    <div className="new-project-form-group-box">
-                        <textarea type="text" name="Project Manager" placeholder="Description" className="new-project-input" id="textBox"></textarea>
-                    </div>
-               
+                        </Form.Select>
+                    </Form.Group>
+                    <Form.Group className="mb-3">
+                        <Form.Label >Project Manager</Form.Label>
+                        <Form.Control type="text" name="Title" />
+                    </Form.Group>
+                    <Form.Group className="mb-3">
+                        <Form.Label >Due date</Form.Label>
+                        <Form.Control type="date" name="Title" />
+                    </Form.Group>
+                    
+                    <Form.Group className="mb-3">
+                        <Form.Label >Description</Form.Label>
+                        <Form.Control as="textarea" rows={4} name="Title" />
+                    </Form.Group>
+                    <p id='NewProjectStatus'></p>
                 </Form>
             </Modal.Body>
             <Modal.Footer>
