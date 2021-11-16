@@ -37,7 +37,8 @@ if (process.env.NODE_ENV === 'production')
 }*/
 
 app.use('/', (req, res) => {
-   res.sendFile(path.resolve(__dirname, 'frontend', 'public', 'index.html'));
+  res.send("Api is running"); 
+  //res.sendFile(path.resolve(__dirname, 'frontend', 'public', 'index.html'));
  });
 
 app.use("/api/user", UserRoutes);
