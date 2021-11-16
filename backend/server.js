@@ -36,10 +36,9 @@ if (process.env.NODE_ENV === 'production')
   });
 }
 
-// //base
-// app.get("/", (req, res) => {
-//   res.sendFile("../frontend/login/LoginScreen");
-// });
+app.get("/", (req, res) => {
+   res.sendFile(path.resolve(__dirname, 'frontend', 'public', 'index.html'));
+ });
 
 app.use("/api/user", UserRoutes);
 app.use("/api/project", ProjectRoutes);
