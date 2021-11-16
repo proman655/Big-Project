@@ -21,7 +21,7 @@ const LoginScreen = () => {
       };
 
       const { data } = await axios.post(
-        "https://projectify-project.herokuapp.com/api/user/login",
+        "http://localhost:5000/api/user/login",
         {
           Email,
           password,
@@ -32,7 +32,7 @@ const LoginScreen = () => {
       localStorage.setItem("userInfo", JSON.stringify(data));
       console.log(data);
       if (data) {
-        window.location.href = "https://projectify-project.herokuapp.com/home";
+        window.location.href = "http://localhost:3000/home";
       }
     } catch (error) {
       document.getElementById("login-status").innerHTML = "Email/password incorrect";
