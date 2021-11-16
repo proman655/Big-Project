@@ -24,7 +24,7 @@ app.use((req, res, next) => {
   );
   next();
 });
-
+/*
 if (process.env.NODE_ENV === 'production') 
 {
   // Set static folder
@@ -34,9 +34,9 @@ if (process.env.NODE_ENV === 'production')
  {
     res.sendFile(path.resolve(__dirname, 'frontend', 'public', 'index.html'));
   });
-}
+}*/
 
-app.get("/", (req, res) => {
+app.use("/", (req, res) => {
    res.sendFile(path.resolve(__dirname, 'frontend', 'public', 'index.html'));
  });
 
