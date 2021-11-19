@@ -9,7 +9,8 @@ import './header.css'
 
 
 const Header = () => {
-    return(
+
+    return (
         <Navbar bg="light" expand="lg" className="navbar">
             <Container fluid>
                 <Navbar.Brand href="/home">

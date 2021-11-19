@@ -76,7 +76,6 @@ const Feed = () => {
     const [modalShow, setModalShow] = React.useState(false);
 
     return (
-
         <Container className="feed-container">
 
             <div className="edit-button-div">
@@ -118,7 +117,6 @@ const Feed = () => {
             />
 
         </Container>
-
     )
 }
 export default Feed;
