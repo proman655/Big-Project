@@ -76,7 +76,7 @@ const LoginScreen = () => {
           <p id="login-status"></p>
 
           <div className="new-user-div">
-            <p>New User?</p>
+            <p>New User Testing?</p>
           </div>
           <Link to="/register">
             <button>
