@@ -1,9 +1,7 @@
 import React from "react";
-import { NavLink, Link } from 'react-router-dom'
 import Placehholder from "../../pictures/card-placeholder.jpg"
 import CreateProjectButton from "../../pictures/create-project-button.png"
 import CancelButton from "../../pictures/cancel-button.png"
-import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
 import Modal from 'react-bootstrap/Modal'
 import Row from 'react-bootstrap/Row'
