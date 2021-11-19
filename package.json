@@ -4,7 +4,7 @@
   "description": "A Project Manager",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon backend/server.js"
+    "start": "npm start"
   },
   "repository": {
     "type": "git",
