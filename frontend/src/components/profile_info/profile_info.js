@@ -8,9 +8,9 @@ const ProfileInfo = () => {
 
     return (
         <Container className="profile-container">
-            <Container className="profile-pic-container">
+            <div className="profile-pic-div">
                 <img src={Pic} alt="pic" className="profile-pic-img" />
-            </Container>
+            </div>
             <Container className="profile-info-container">
                 <h3 className="profile-label">First name</h3>
                 <div className="profile-item-div"><h3 className="profile-info-text">John</h3></div>
