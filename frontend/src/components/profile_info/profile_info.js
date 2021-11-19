@@ -13,13 +13,13 @@ const ProfileInfo = () => {
             </Container>
             <Container className="profile-info-container">
                 <h3 className="profile-label">First name</h3>
-                <h3 className="profile-info-text">John</h3>
+                <div className="profile-item-div"><h3 className="profile-info-text">John</h3></div>
                 <h3 className="profile-label">Last name</h3>
-                <h3 className="profile-info-text" >Doe</h3>
+                <div className="profile-item-div"><h3 className="profile-info-text" >Doe</h3></div>
                 <h3 className="profile-label">Email</h3>
-                <h3 className="profile-info-text">jdoe@gmail.com</h3>
+                <div className="profile-item-div"><h3 className="profile-info-text">jdoe@gmail.com</h3></div>
                 <h3 className="profile-label">Phone number</h3>
-                <h3 className="profile-info-text">(343) 433 4312</h3>
+                <div className="profile-item-div"><h3 className="profile-info-text">(343) 433 4312</h3></div>
             </Container>
         </Container>
     )

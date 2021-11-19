@@ -3,13 +3,14 @@
     margin-top: 80px;
     text-align: center;
     align-items: center;
-    width: 150px;
+    width: 300px;
 }
 
 .profile-pic-container
 {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
+    align-items: center;
     border-width: 2px !important;
     border-color: #2980BA !important;
     border-radius: 50px !important;
@@ -31,4 +32,11 @@
 {
     color: white;
     font-weight: bold;
+}
+
+.profile-item-div
+{
+    height: 30px;
+    background-color: #E2E2E2;
+    color: #2980BA;
 }
