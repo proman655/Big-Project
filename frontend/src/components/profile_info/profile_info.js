@@ -7,12 +7,12 @@ import './profile_info.css'
 const ProfileInfo = () => {
 
     return (
-        <Container className="div-profile">
-            <Container className="profile-pic">
+        <Container className="profile-container">
+            <Container className="profile-pic-container">
                 <img src={Pic} alt="pic" className="profile-pic-img" />
             </Container>
-            <Container className="profile-info-div">
-                <h3 className="v">First name</h3>
+            <Container className="profile-info-container">
+                <h3 className="profile-label">First name</h3>
                 <h3 className="profile-info-text">John</h3>
                 <h3 className="profile-label">Last name</h3>
                 <h3 className="profile-info-text" >Doe</h3>
