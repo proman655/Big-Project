@@ -3,7 +3,9 @@
     margin-top: 80px;
     text-align: center;
     align-items: center;
-    width: 300px;
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
 }
 
 .profile-pic-container
@@ -36,7 +38,9 @@
 
 .profile-item-div
 {
-    height: 30px;
+    height: 40px;
     background-color: #E2E2E2;
     color: #2980BA;
+    border-radius: 7% / 50%;
+    margin-bottom: 10px;
 }
