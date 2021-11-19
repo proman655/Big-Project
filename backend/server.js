@@ -5,6 +5,7 @@ const connectDB = require("./config/db");
 const UserRoutes = require("./routes/userRoutes");
 const ProjectRoutes = require("./routes/projectRoutes");
 const port = process.env.PORT || 5000;
+const path = require("path");
 
 dotenv.config();
 connectDB();
@@ -36,9 +37,11 @@ if (process.env.NODE_ENV === 'production')
   });
 }*/
 
+__dirname = path.resolve();
+
 app.use('/', (req, res) => {
   //res.send("Api is running"); 
-  res.sendFile(path.resolve(__dirname , "frontend", "public", "index.html"));
+  res.sendFile(__dirname + '/frontend/public/index.html');
  });
 
 app.use("/api/user", UserRoutes);
