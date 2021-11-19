@@ -94,6 +94,17 @@ const RegisterScreen = () => {
           </div>
           <div className="register-form-group">
             <input
+              type="phone"
+              name="phoneNumber"
+              value={phoneNumber}
+              placeholder="Phone number"
+              className="register-input"
+              required
+              onChange={(e) => setPhone(e.target.value)}
+            ></input>
+          </div>
+          <div className="register-form-group">
+            <input
               type="password"
               name="password"
               value={password}
@@ -114,18 +125,6 @@ const RegisterScreen = () => {
               onChange={(e) => setPasswordRepeat(e.target.value)}
             ></input>
           </div>
-          <div className="register-form-group">
-            <input
-              type="phone"
-              name="phoneNumber"
-              value={phoneNumber}
-              placeholder="Phone Number"
-              className="register-input"
-              required
-              onChange={(e) => setPhone(e.target.value)}
-            ></input>
-          </div>
-
           <p id="register-status"></p>
 
           <div className="buttons-div">

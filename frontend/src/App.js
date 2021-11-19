@@ -1,6 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "./home/home.js";
+import Profile from "./profile/profile.js";
 import Login from "./login/LoginScreen.js";
 import Register from "./register/RegisterScreen.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -20,6 +21,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={Login}></Route>
           <Route exact path="/home" component={Home}></Route>
+          <Route exact path="/profile" component={Profile}></Route>
           <Route exact path="/register" component={Register}></Route>
         </Switch>
       </div>
