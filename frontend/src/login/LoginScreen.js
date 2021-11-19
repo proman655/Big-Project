@@ -32,7 +32,7 @@ const LoginScreen = () => {
       localStorage.setItem("userInfo", JSON.stringify(data));
       console.log(data);
       if (data) {
-        window.location.href = "http://localhost:3000/home";
+        window.location.href = "/home";
       }
     } catch (error) {
       document.getElementById("login-status").innerHTML =
