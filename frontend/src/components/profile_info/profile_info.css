@@ -6,7 +6,6 @@
     flex-flow: column;
     width: 400px;
     height: 600px;
-    border-radius: 20px;
 }
 
 .profile-pic-div
@@ -21,6 +20,8 @@
 
 .profile-pic-img
 {
+    margin-left: auto;
+    margin-right: auto;
     width: 100px;
     height: 100px;
 }
@@ -29,7 +30,8 @@
 {
     text-align: center;
     background-color: #2980BA;
-    height: 450px;
+    height: 400px;
+    border-radius: 25px;
 }
 
 .profile-label
@@ -44,5 +46,5 @@
     background-color: #E2E2E2;
     color: #2980BA;
     border-radius: 7% / 50%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
