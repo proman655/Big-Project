@@ -19,7 +19,8 @@ const RegisterScreen = () => {
 
     if (password !== passwordRepeat) {
       console.log("Passwords do not match");
-      document.getElementById("register-status").innerHTML = "Passwords do not match";
+      document.getElementById("register-status").innerHTML =
+        "Passwords do not match";
     } else {
       try {
         const config = {
@@ -29,7 +30,7 @@ const RegisterScreen = () => {
         };
 
         const { data } = await axios.post(
-          "http://localhost:5000/api/user/register",
+          "/api/user/register",
           {
             firstName,
             lastName,
@@ -124,9 +125,9 @@ const RegisterScreen = () => {
               onChange={(e) => setPhone(e.target.value)}
             ></input>
           </div>
-          
-          <p id='register-status'></p>
-         
+
+          <p id="register-status"></p>
+
           <div className="buttons-div">
             <Link to="/">
               <button renderas="button" className="cancel-button">
