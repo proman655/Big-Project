@@ -4,6 +4,8 @@
     text-align: center;
     align-items: center;
     width: 300px;
+    height: 500px;
+    border-radius: 7px;
 }
 
 .profile-pic-container
@@ -36,7 +38,8 @@
 
 .profile-item-div
 {
-    height: 30px;
+    height: 40px;
     background-color: #E2E2E2;
     color: #2980BA;
+    border-radius: 7% / 50%;
 }
