@@ -3,12 +3,13 @@
     margin-top: 80px;
     text-align: center;
     align-items: center;
+    flex-flow: column;
     width: 400px;
     height: 600px;
     border-radius: 20px;
 }
 
-.profile-pic-container
+.profile-pic-div
 {
     width: 150px;
     height: 150px;
@@ -28,6 +29,7 @@
 {
     text-align: center;
     background-color: #2980BA;
+    height: 450px;
 }
 
 .profile-label
