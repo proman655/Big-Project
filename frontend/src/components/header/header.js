@@ -13,18 +13,18 @@ const Header = () => {
     return(
         <Navbar bg="light" expand="lg" className="navbar">
             <Container fluid>
-                <Navbar.Brand href="/">
+                <Navbar.Brand href="/home">
                     <img src={Logo} alt='logo' className='header-logo-img'/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#action1" className="navbar-item">Projects</Nav.Link>
+                        <Nav.Link href="/home" className="navbar-item">Projects</Nav.Link>
                         <Nav.Link href="#action2" className="navbar-item">Tasks</Nav.Link>
                         <Nav.Link href="/profile" className="navbar-item">Profile</Nav.Link>
                         <NavDropdown title="Settings"  id="navbarScrollingDropdown">
                             <NavDropdown.Item href="#action3" className="navbar-item">Language</NavDropdown.Item>
-                            <NavDropdown.Item><Link to="/" className="navbar-item">Logout</Link></NavDropdown.Item>
+                            <NavDropdown.Item href="/" className="navbar-item">Logout</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
