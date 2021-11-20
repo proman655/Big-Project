@@ -66,18 +66,38 @@ button
 {
     border-style: none;
     background-color: #E2E2E2;
-    width: 100%;
     margin: 0 auto;
 }
 
 .buttons-div
 {
-    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
 
-.cancel-button
+.register-cancel-button
 {
-    flex: 1;
+    width: 120px;
+    height: auto;
+}
+
+.register-button2
+{
+    width: 120px;
+    height: auto;
+}
+
+#cancelButtonImg
+{
+    max-width: 100%;
+    height: auto;
+}
+
+#registerButtonImg
+{
+    max-width: 100%;
+    height: auto;
 }
 
 #register-status

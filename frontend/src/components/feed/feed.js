@@ -2,6 +2,8 @@ import React from "react";
 import Placehholder from "../../pictures/card-placeholder.jpg"
 import CreateProjectButton from "../../pictures/create-project-button.png"
 import CancelButton from "../../pictures/cancel-button.png"
+import EditButton from "../../pictures/edit-button.png"
+import AddButton from "../../pictures/add-button.png"
 import Form from 'react-bootstrap/Form'
 import Modal from 'react-bootstrap/Modal'
 import Row from 'react-bootstrap/Row'
@@ -10,7 +12,6 @@ import Container from 'react-bootstrap/Container'
 import Card from 'react-bootstrap/Card'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './feed.css'
-
 
 function MyVerticallyCenteredModal(props) {
     return (
@@ -42,7 +43,7 @@ function MyVerticallyCenteredModal(props) {
                         </Form.Select>
                     </Form.Group>
                     <Form.Group className="mb-3">
-                        <Form.Label >Project Manager</Form.Label>
+                        <Form.Label >Project manager</Form.Label>
                         <Form.Control type="text" name="Title" />
                     </Form.Group>
                     <Form.Group className="mb-3">
@@ -58,14 +59,12 @@ function MyVerticallyCenteredModal(props) {
                 </Form>
             </Modal.Body>
             <Modal.Footer>
-                <button className="new-project-button">
-                    <img src={CreateProjectButton} alt="submit" />
+                <button className="create-project-button">
+                    <img src={CreateProjectButton} alt="submit" id="createProjectButtonImg"/>
                 </button>
-                <button onClick={props.onHide} className="new-project-button">
-                    <img src={CancelButton} alt="cancel"/>
+                <button onClick={props.onHide} className="cancel-button2">
+                    <img src={CancelButton} alt="cancel" id="cancelButtonImg"/>
                 </button>
-                    
-              
             </Modal.Footer>
         </Modal>
     );
@@ -78,9 +77,9 @@ const Feed = () => {
     return (
         <Container className="feed-container">
 
-            <div className="edit-button-div">
-                <button id="edit-button"/>
-            </div>
+            <button className="edit-button">
+                <img src={EditButton} alt="edit" id="editImage"/>
+            </button>
 
             <div className="cards-div">
                 <Row xs={1} md={3} className="g-4">
@@ -107,8 +106,10 @@ const Feed = () => {
                 </Row>
             </div>
             
-            <div className="add-button-div" onClick={() => setModalShow(true)}>
-                <button id="add-button" />
+            <div className="add-button-div">
+                <button  class="add-button" onClick={() => setModalShow(true)}>
+                    <img src={AddButton} alt="add" id="addButtonImg"/>
+                </button>
             </div>
 
             <MyVerticallyCenteredModal

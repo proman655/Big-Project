@@ -128,22 +128,24 @@ const RegisterScreen = () => {
           <p id="register-status"></p>
 
           <div className="buttons-div">
+       
             <Link to="/">
-              <button renderas="button" className="cancel-button">
+              <button renderas="button" className="register-cancel-button">
                 <img
                   src={CancelButton}
                   alt="cancel"
-                  className="register-button"
+                  id="cancelButtonImg"
                 />
               </button>
             </Link>
-            <button onSubmit={submitHandler} className="register-button">
+            <button onSubmit={submitHandler} className="register-button2">
               <img
                 src={RegisterButton}
                 alt="register"
-                className="register-button"
+                id="registerButtonImg"
               />
             </button>
+            
           </div>
         </form>
       </div>

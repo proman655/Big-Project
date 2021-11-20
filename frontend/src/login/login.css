@@ -17,6 +17,7 @@
 {
     width: 250px;
     align-items: center;
+    text-align: center;
 }
 
 .logo-img
@@ -31,6 +32,7 @@
     height: 50px;
     width: auto;
     align-items:center;
+    text-align: center;
 }
 
 .login-input
@@ -62,12 +64,33 @@ input:focus
     border-color: #2980BA !important;
 }
 
-button
+.login-button
 {
     border-style: none;
     background-color: #E2E2E2;
-    width: 100%;
+    width: 155px;
     margin: 0 auto;
+    align-items: center;
+}
+
+.register-button
+{
+    border-style: none;
+    background-color: #E2E2E2;
+    width: 120px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+#registerButtonImg
+{
+    max-width: 100%;
+}
+
+#loginButtonImg
+{
+    max-width: 100%;
 }
 
 .new-user-div
@@ -77,7 +100,22 @@ button
     text-align: center;
 }
 
-#login-status
+#forgotPasswordLabel
+{
+    color: #2980BA;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#forgotPasswordLink
+{
+    color: #2980BA;
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+}
+
+#loginStatus
 {
     color: #FF5364;
     font-weight: bold;
