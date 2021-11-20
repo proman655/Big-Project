@@ -158,12 +158,13 @@ sup {
   top: -0.5em;
 }
 a {
-  color: inherit;
+  color: #158cba;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: inherit;
+  color: #0d5875;
+  text-decoration: underline;
 }
 a:not([href]):not([class]) {
   color: inherit;
