@@ -20,7 +20,7 @@ const Header = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="/home" className="navbar-item">Projects</Nav.Link>
-                        <Nav.Link href="#action2" className="navbar-item">Tasks</Nav.Link>
+                        <Nav.Link href="/tasks" className="navbar-item">Tasks</Nav.Link>
                         <Nav.Link href="/profile" className="navbar-item">Profile</Nav.Link>
                         <NavDropdown title="Settings"  id="navbarScrollingDropdown">
                             <NavDropdown.Item href="#action3" className="navbar-item">Language</NavDropdown.Item>

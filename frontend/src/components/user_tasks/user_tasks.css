@@ -1,0 +1,21 @@
+.table-container
+{
+  margin-top: 50px;
+}
+
+.table {
+  --bs-table-striped-color: #2980BA;
+  --bs-table-hover-color: #FFF;
+  --bs-table-striped-bg: #E2E2E2;
+  --bs-table-hover-bg: #C4C4C4;
+  color: #2980BA;
+}
+
+#dropdown-basic-button
+{
+  background-color: #2980BA !important;
+  border-radius: 30px  !important;
+  margin-bottom: 20px;
+  border-style: none;
+  box-shadow: none !important;
+}

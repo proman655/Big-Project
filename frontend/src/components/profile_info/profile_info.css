@@ -28,22 +28,24 @@
 .profile-info-container
 {
     text-align: center;
-    background-color: #C4C4C4 ;
+    background-color: #E2E2E2 ;
     border-radius: 20px;
     height: 480px;
+    
 }
 
 .profile-label
 {
-    color: white;
+    color: #2980BA;
     font-weight: bold;
 }
 
 .profile-item-div
 {
-    height: 35px;
-    background-color: white;
-    color: #2980BA;
+    height: 40px;
+    background-color: #FFF;
+    padding: 5px;
+    color: #C4C4C4;
     border-radius: 2% / 20%;
     margin-bottom: 15px;
 }
@@ -59,15 +61,15 @@
 .edit-profile-button 
 {
     background-color: white;
-    width: 195px;
-    height: auto;
+    width: 170px;
+    height: 50px;
 }
 
 .change-password-button
 {
     background-color: white;
-    width: 195px;
-    height: auto;
+    width: 205px;
+    height: 50px;
 }
 
 #editProfileButtonImg
