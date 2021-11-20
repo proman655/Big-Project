@@ -1,4 +1,5 @@
 import Button from "@restart/ui/esm/Button";
+import Logo from "../../pictures/logo-nobg.png";
 import {
   Container,
   Form,
@@ -7,12 +8,19 @@ import {
   Navbar,
   NavDropdown,
 } from "react-bootstrap";
+import "./Header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <Navbar bg="dark" expand="lg" variant="dark">
+    <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="/">What To-Do</Navbar.Brand>
+        <Navbar.Brand>
+          <Link to="/">
+            <img src={Logo} alt="logo" className="header-logo-img" />
+            What To-Do!
+          </Link>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="m-auto">
@@ -23,7 +31,9 @@ const Header = () => {
                 className="me-2"
                 aria-label="Search"
               />
-              <Button variant="outline-success">Search</Button>
+              <Button variant="secondary" className="SearchButton">
+                Search
+              </Button>
             </Form>
           </Nav>
 
@@ -32,7 +42,9 @@ const Header = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Tasks</Nav.Link>
+            <Nav.Link href="/mynotes">
+              <Link to="/mynotes">Tasks</Link>
+            </Nav.Link>
             <NavDropdown title="Christian Silva" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">My Profile</NavDropdown.Item>
               <NavDropdown.Divider />

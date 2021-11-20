@@ -1,0 +1,14 @@
+.text-center {
+  text-align: center;
+  align-items: center;
+  color: #2980ba;
+  background-color: #e2e2e2;
+  margin-bottom: 0%;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  padding: 20px 0;
+  margin-top: -70px;
+  height: 70px;
+  clear: both;
+}
