@@ -6,7 +6,7 @@ const Footer = () => {
 
     return (
         <footer>
-            <h6>Projectify &copy; 2021</h6>
+            <h6> &copy; 2021 Projectify. All rights reserved.</h6>
         </footer>
     )
 }
