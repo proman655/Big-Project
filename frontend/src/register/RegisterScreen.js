@@ -94,7 +94,7 @@ const RegisterScreen = () => {
           </div>
           <div className="register-form-group">
             <input
-              type="phone"
+              type="number"
               name="phoneNumber"
               value={phoneNumber}
               placeholder="Phone number"
