@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/footer/footer";
 import { useState } from "react";
 import Logo from "../pictures/logo-title-nobg.png";
 import LoginButton from "../pictures/login-button.png";
@@ -142,7 +143,7 @@ const LoginScreen = () => {
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
-
+    <Footer/>
     </div>
   );
 };

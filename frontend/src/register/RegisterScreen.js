@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from "../components/footer/footer";
 import Logo from "../pictures/logo-register.png";
 import RegisterButton from "../pictures/register-button.png";
 import CancelButton from "../pictures/cancel-button.png";
@@ -149,6 +150,7 @@ const RegisterScreen = () => {
           </div>
         </form>
       </div>
+      <Footer/>
     </div>
   );
 };
