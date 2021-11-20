@@ -51,20 +51,22 @@
 .edit-buttons-div
 {
     margin-top: 20px;
+    align-items: center;
+    text-align: center;
     flex-direction: column;
 }
 
 .edit-profile-button 
 {
     background-color: white;
-    width: 340px;
+    width: 195px;
     height: auto;
 }
 
 .change-password-button
 {
     background-color: white;
-    width: 340px;
+    width: 195px;
     height: auto;
 }
 
