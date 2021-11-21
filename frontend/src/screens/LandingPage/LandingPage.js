@@ -3,13 +3,13 @@ import React, { useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import "./LandingPage.css";
 
-const LandingPage = () => {
-  //useEffect(() => {
-  //const userInfo = localStorage.getItem("userInfo");
-  //if (userInfo) {
-  // history.push("/mynotes");
-  //}
-  //}, [history]);
+const LandingPage = ({ history }) => {
+  useEffect(() => {
+    const userInfo = localStorage.getItem("userInfo");
+    if (userInfo) {
+      history.push("/mynotes");
+    }
+  }, [history]);
   return (
     <div className="main">
       <Container>
