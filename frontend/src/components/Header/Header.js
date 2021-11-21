@@ -9,9 +9,10 @@ import {
   NavDropdown,
 } from "react-bootstrap";
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const Header = () => {
+  const history = useHistory();
   return (
     <Navbar bg="light" expand="lg">
       <Container>
@@ -48,7 +49,14 @@ const Header = () => {
             <NavDropdown title="Christian Silva" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">My Profile</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">Logout</NavDropdown.Item>
+              <NavDropdown.Item
+                onClick={() => {
+                  localStorage.removeItem("userInfo");
+                  history.push("/");
+                }}
+              >
+                Logout
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
