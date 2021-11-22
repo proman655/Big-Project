@@ -1,2 +1,14 @@
-.AccordionHeaders {
+.card {
+  margin-right: 5px;
+}
+
+.cardtext {
+  justify-content: space-evenly;
+}
+.singleCards {
+  margin-bottom: 15px;
+}
+
+.projectCards {
+  height: 50 px;
 }

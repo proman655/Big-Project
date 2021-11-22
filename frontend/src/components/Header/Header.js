@@ -33,7 +33,7 @@ const Header = ({ setSearch }) => {
         <Navbar.Brand>
           <Link to="/">
             <img src={Logo} alt="logo" className="header-logo-img" />
-            What To-Do!
+            Projectify
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -60,7 +60,7 @@ const Header = ({ setSearch }) => {
               navbarScroll
             >
               <Nav.Link href="/mynotes">
-                <Link to="/mynotes">Tasks</Link>
+                <Link to="/mynotes">Projects</Link>
               </Nav.Link>
               <NavDropdown title={userInfo?.name} id="navbarScrollingDropdown">
                 <NavDropdown.Item href="/profile">My Profile</NavDropdown.Item>

@@ -16,8 +16,8 @@ const LandingPage = ({ history }) => {
         <Row>
           <div className="intro-text">
             <div>
-              <h1 className="title">Welcome to What To-Do</h1>
-              <p className="subtitle">A safe place to list your To-Do's</p>
+              <h1 className="title">Welcome to Projectify</h1>
+              <p className="subtitle">A safe project management tool</p>
             </div>
             <div className="buttonContainer">
               <a href="/login">
