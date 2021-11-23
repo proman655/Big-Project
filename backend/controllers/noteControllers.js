@@ -49,9 +49,9 @@ const getFavorite = asyncHandler(async (req, res) => {
 
 
 const favoriteNote = asyncHandler(async (req, res) => {
-  const { _id, favorite } = req.body;
+  const {favorite } = req.body;
 
-  const note = await Note.findByIdAndUpdate({_id:_id},{favorite:favorite},function(err,docs){
+  const note = await Note.findByIdAndUpdate({_id:req.params.id},{favorite:favorite},function(err,docs){
     
     if (err){
         console.log(err)
