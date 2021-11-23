@@ -76,8 +76,8 @@ const updateUserProfile = asyncHandler(async (req, res) => {
       token: generateToken(updatedUser._id),
     });
   } else {
-    res.status(404);
-    throw new Error("User Not Found");
+    res.status(401);
+    throw new Error("Please Fill in all Fields");
   }
 });
 module.exports = { registerUser, authUser, updateUserProfile };

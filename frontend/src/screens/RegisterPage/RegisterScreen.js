@@ -6,6 +6,8 @@ import ErrorMessage from "../../components/ErrorMessage";
 import Loading from "../../components/Loading";
 import MainScreen from "../../components/MainScreen";
 import { useDispatch, useSelector } from "react-redux";
+import "./RegisterScreen.css";
+import Logo from "../../pictures/logo-register.png";
 
 const RegisterScreen = ({ history }) => {
   const [email, setEmail] = useState("");
@@ -35,20 +37,23 @@ const RegisterScreen = ({ history }) => {
     }
   };
   return (
-    <MainScreen title="REGISTER">
-      <div className="loginContainer">
-        {error && <ErrorMessage variant="danger">{error}</ErrorMessage>}
-        {message && <ErrorMessage variant="danger">{message}</ErrorMessage>}
-        {loading && <Loading />}
+    <div className="div-register">
+      <div className="div-register-logo">
+        <img src={Logo} alt="logo" className="logo-img" />
+      </div>
+      {error && <ErrorMessage variant="danger">{error}</ErrorMessage>}
+      {message && <ErrorMessage variant="danger">{message}</ErrorMessage>}
+      {loading && <Loading />}
+      <div className="div-login-form">
         <Form onSubmit={submitHandler}>
-          <Form.Group controlId="name">
-            <Form.Label
-              style={{
-                margin: "10px 0",
-              }}
-            >
-              Name
-            </Form.Label>
+          <Form.Group
+            className="login-form-group"
+            controlId="name"
+            style={{
+              margin: "10px 0px",
+            }}
+          >
+            <Form.Label></Form.Label>
             <Form.Control
               type="name"
               value={name}
@@ -56,14 +61,13 @@ const RegisterScreen = ({ history }) => {
               onChange={(e) => setName(e.target.value)}
             />
           </Form.Group>
-          <Form.Group controlId="formBasicEmail">
-            <Form.Label
-              style={{
-                margin: "10px 0",
-              }}
-            >
-              Email address
-            </Form.Label>
+          <Form.Group
+            controlId="formBasicEmail"
+            style={{
+              margin: "10px 0px",
+            }}
+          >
+            <Form.Label></Form.Label>
             <Form.Control
               type="email"
               value={email}
@@ -71,14 +75,13 @@ const RegisterScreen = ({ history }) => {
               onChange={(e) => setEmail(e.target.value)}
             />
           </Form.Group>
-          <Form.Group controlId="formBasicPassword">
-            <Form.Label
-              style={{
-                margin: "10px 0",
-              }}
-            >
-              Password
-            </Form.Label>
+          <Form.Group
+            controlId="formBasicPassword"
+            style={{
+              margin: "10px 0px",
+            }}
+          >
+            <Form.Label></Form.Label>
             <Form.Control
               type="password"
               value={password}
@@ -86,14 +89,13 @@ const RegisterScreen = ({ history }) => {
               onChange={(e) => setPassword(e.target.value)}
             />
           </Form.Group>
-          <Form.Group controlId="confirmPassword">
-            <Form.Label
-              style={{
-                margin: "10px 0",
-              }}
-            >
-              Confirm Password
-            </Form.Label>
+          <Form.Group
+            controlId="confirmPassword"
+            style={{
+              margin: "10px 0px",
+            }}
+          >
+            <Form.Label></Form.Label>
             <Form.Control
               type="password"
               value={confirmpassword}
@@ -105,19 +107,31 @@ const RegisterScreen = ({ history }) => {
             style={{
               margin: "10px 0",
             }}
+            className="loginButton"
+            size="lg"
             variant="primary"
             type="submit"
           >
             Register
           </Button>
         </Form>
-        <Row className="py-3">
-          <Col>
-            Have an Account ?<Link to="/login">Login</Link>
-          </Col>
-        </Row>
+        <div className="new-user-div">New User?</div>
+        <Link to="/login">
+          <Button
+            style={{
+              margin: "0px 0px",
+              marginBottom: "5px",
+            }}
+            className="loginButton"
+            size="lg"
+            variant="primary"
+            type="submit"
+          >
+            Login
+          </Button>
+        </Link>
       </div>
-    </MainScreen>
+    </div>
   );
 };
 

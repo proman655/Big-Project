@@ -29,56 +29,65 @@ const Header = ({ setSearch }) => {
 
   return (
     <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand>
-          <Link to="/">
-            <img src={Logo} alt="logo" className="header-logo-img" />
-            Projectify
-          </Link>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav className="m-auto">
-            <Form className="d-flex">
-              <FormControl
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-                onChange={(e) => setSearch(e.target.value)}
-              />
-              <Button variant="secondary" className="SearchButton">
-                Search
-              </Button>
-            </Form>
-          </Nav>
+      {userInfo ? (
+        <Container>
+          <Navbar.Brand>
+            <Link to="/">
+              <img src={Logo} alt="logo" className="header-logo-img" />
+              Projectify
+            </Link>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Collapse id="navbarScroll">
+            <Nav className="m-auto">
+              <Form className="d-flex">
+                <FormControl
+                  type="search"
+                  placeholder="Search"
+                  className="me-2"
+                  aria-label="Search"
+                  onChange={(e) => setSearch(e.target.value)}
+                />
+                <Button variant="secondary" className="SearchButton">
+                  Search
+                </Button>
+              </Form>
+            </Nav>
 
-          {userInfo ? (
-            <Nav
-              className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: "100px" }}
-              navbarScroll
-            >
-              <Nav.Link href="/mynotes">
-                <Link to="/mynotes">Projects</Link>
-              </Nav.Link>
-              <NavDropdown title={userInfo?.name} id="navbarScrollingDropdown">
-                <NavDropdown.Item href="/profile">My Profile</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item onClick={logoutHandler}>
-                  Logout
-                </NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-          ) : (
-            <Nav>
-              <Nav.Link href="/login">
-                <Link to="/login">Login</Link>
-              </Nav.Link>
-            </Nav>
-          )}
-        </Navbar.Collapse>
-      </Container>
+            {userInfo ? (
+              <Nav
+                className="me-auto my-2 my-lg-0"
+                style={{ maxHeight: "100px" }}
+                navbarScroll
+              >
+                <Nav.Link href="/mynotes">
+                  <Link to="/mynotes">Projects</Link>
+                </Nav.Link>
+                <NavDropdown
+                  title={userInfo?.name}
+                  id="navbarScrollingDropdown"
+                >
+                  <NavDropdown.Item href="/profile">
+                    My Profile
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item onClick={logoutHandler}>
+                    Logout
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+            ) : (
+              <Nav>
+                <Nav.Link href="/login">
+                  <Link to="/login">Login</Link>
+                </Nav.Link>
+              </Nav>
+            )}
+          </Navbar.Collapse>
+        </Container>
+      ) : (
+        <div></div>
+      )}
     </Navbar>
   );
 };

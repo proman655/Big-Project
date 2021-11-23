@@ -7,6 +7,7 @@ import MainScreen from "../../components/MainScreen";
 import "./LoginScreen.css";
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "../../actions/userActions";
+import Logo from "../../pictures/logo-title-nobg.png";
 
 const LoginScreen = ({ history }) => {
   const [email, setEmail] = useState("");
@@ -30,13 +31,22 @@ const LoginScreen = ({ history }) => {
   };
 
   return (
-    <MainScreen title="LOGIN">
-      <div className="loginContainer">
-        {error && <ErrorMessage variant="danger">{error}</ErrorMessage>}
-        {loading && <Loading />}
+    <div className="div-login">
+      <div className="div-login-logo">
+        <img src={Logo} alt="logo" className="logo-img" />
+      </div>
+      {error && <ErrorMessage variant="danger">{error}</ErrorMessage>}
+      {loading && <Loading />}
+      <div className="div-login-form">
         <Form onSubmit={submitHandler}>
-          <Form.Group controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
+          <Form.Group
+            controlId="formBasicEmail"
+            className="login-form-group"
+            style={{
+              margin: "10px 0px",
+            }}
+          >
+            <Form.Label></Form.Label>
             <Form.Control
               type="email"
               value={email}
@@ -45,33 +55,53 @@ const LoginScreen = ({ history }) => {
             />
           </Form.Group>
 
-          <Form.Group controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
+          <Form.Group
+            controlId="formBasicPassword"
+            className="login-form-group"
+            style={{
+              margin: "30px 0px",
+            }}
+          >
+            <Form.Label></Form.Label>
             <Form.Control
               type="password"
               value={password}
-              placeholder="Password"
+              placeholder="Enter Password"
               onChange={(e) => setPassword(e.target.value)}
             />
           </Form.Group>
 
           <Button
             style={{
-              margin: "10px 0",
+              margin: "10px 0px",
             }}
+            className="loginButton"
+            size="lg"
             variant="primary"
             type="submit"
           >
-            Submit
+            Login
           </Button>
         </Form>
-        <Row className="py-3">
-          <Col>
-            New Customer ?<Link to="/register">Register Here</Link>
-          </Col>
-        </Row>
       </div>
-    </MainScreen>
+      <div>
+        <div className="new-user-div">New User?</div>
+        <Link to="/register">
+          <Button
+            style={{
+              margin: "0px 0px",
+              marginBottom: "5px",
+            }}
+            className="loginButton"
+            size="lg"
+            variant="primary"
+            type="submit"
+          >
+            Register
+          </Button>
+        </Link>
+      </div>
+    </div>
   );
 };
 

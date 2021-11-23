@@ -1,0 +1,13 @@
+.div-register {
+  width: 550px;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  background-color: #e2e2e2;
+  padding: 10px;
+  margin-top: 10vh;
+  align-items: center;
+  border-radius: 7% / 5%;
+}
