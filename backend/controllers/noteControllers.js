@@ -7,13 +7,18 @@ const getNotes = asyncHandler(async (req, res) => {
 });
 
 const createNote = asyncHandler(async (req, res) => {
-  const { title, content, category } = req.body;
+  const { title, content, category} = req.body;
 
   if (!title || !content || !category) {
     res.status(400);
     throw new Error("Please Fill all the fields");
   } else {
-    const note = new Note({ user: req.user._id, title, content, category });
+    const note = new Note(
+      { user: req.user._id, 
+        title, 
+        content, 
+        category 
+      });
 
     const createdNote = await note.save();
 
@@ -30,6 +35,36 @@ const getNoteById = asyncHandler(async (req, res) => {
     res.status(404).json({ message: "Note not found" });
   }
 });
+
+
+const getFavorite = asyncHandler(async (req, res) => {
+  const note = await Note.find({favorite: "true"});
+
+  if (note) {
+    res.json(note);
+  } else {
+    res.status(404).json({ message: "Note not found" });
+  }
+});
+
+
+const favoriteNote = asyncHandler(async (req, res) => {
+  const { _id, favorite } = req.body;
+
+  const note = await Note.findByIdAndUpdate({_id:_id},{favorite:favorite},function(err,docs){
+    
+    if (err){
+        console.log(err)
+    }
+    else{
+        console.log("Updated Docs : ", docs);
+    }
+  
+});
+
+
+});
+
 
 const UpdateNote = asyncHandler(async (req, res) => {
   const { title, content, category } = req.body;
@@ -71,4 +106,4 @@ const DeleteNote = asyncHandler(async (req, res) => {
   }
 });
 
-module.exports = { getNotes, createNote, getNoteById, UpdateNote, DeleteNote };
+module.exports = { getNotes, createNote, getNoteById, UpdateNote, DeleteNote, favoriteNote, getFavorite };

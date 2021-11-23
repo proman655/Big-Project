@@ -14,6 +14,11 @@ const noteSchema = mongoose.Schema(
       type: String,
       required: true,
     },
+    favorite: {
+      type: Boolean,
+      required: true,
+      default: false
+    },
     user: {
       type: mongoose.Schema.Types.ObjectId,
       required: true,
