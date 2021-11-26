@@ -17,7 +17,11 @@ const noteSchema = mongoose.Schema(
     favorite: {
       type: Boolean,
       required: true,
-      default: false
+      default: false,
+    },
+    dueDate: {
+      type: String,
+      required: true,
     },
     user: {
       type: mongoose.Schema.Types.ObjectId,

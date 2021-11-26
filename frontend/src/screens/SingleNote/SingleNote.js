@@ -12,6 +12,7 @@ function SingleNote({ match, history }) {
   const [title, setTitle] = useState();
   const [content, setContent] = useState();
   const [category, setCategory] = useState();
+  const [dueDate, setDueDate] = useState();
   const [date, setDate] = useState("");
 
   const dispatch = useDispatch();
@@ -36,6 +37,7 @@ function SingleNote({ match, history }) {
       setTitle(data.title);
       setContent(data.content);
       setCategory(data.category);
+      setDueDate(data.dueDate);
       setDate(data.updatedAt);
     };
 
@@ -46,12 +48,15 @@ function SingleNote({ match, history }) {
     setTitle("");
     setCategory("");
     setContent("");
+    setDueDate("");
   };
 
   const updateHandler = (e) => {
     e.preventDefault();
-    dispatch(updateNoteAction(match.params.id, title, content, category));
-    if (!title || !content || !category) return;
+    dispatch(
+      updateNoteAction(match.params.id, title, content, category, dueDate)
+    );
+    if (!title || !content || !category || !dueDate) return;
 
     resetHandler();
     history.push("/mynotes");
@@ -104,6 +109,15 @@ function SingleNote({ match, history }) {
                 placeholder="Enter the Category"
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group controlId="content">
+              <Form.Label>Due Date</Form.Label>
+              <Form.Control
+                type="date"
+                placeholder="MM/DD/YYYY"
+                value={dueDate}
+                onChange={(e) => setDueDate(e.target.value)}
               />
             </Form.Group>
             {loading && <Loading size={50} />}

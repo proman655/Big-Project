@@ -102,6 +102,7 @@ const MyNotes = ({ search }) => {
                       <ListGroup variant="flush">
                         <Card.Text key={note._id} />
                         <p>{note.content}</p>
+                        <p>Due Date: {note.dueDate}</p>
                       </ListGroup>
                     </Card.Text>
                     <Button href={`/note/${note._id}`}>Edit</Button>

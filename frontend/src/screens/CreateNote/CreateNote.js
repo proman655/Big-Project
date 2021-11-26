@@ -11,6 +11,7 @@ function CreateNote({ history }) {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [category, setCategory] = useState("");
+  const [dueDate, setDueDate] = useState("");
 
   const dispatch = useDispatch();
 
@@ -23,12 +24,13 @@ function CreateNote({ history }) {
     setTitle("");
     setCategory("");
     setContent("");
+    setDueDate("");
   };
 
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(createNoteAction(title, content, category));
-    if (!title || !content || !category) return;
+    dispatch(createNoteAction(title, content, category, dueDate));
+    if (!title || !content || !category || !dueDate) return;
 
     resetHandler();
     history.push("/mynotes");
@@ -77,6 +79,14 @@ function CreateNote({ history }) {
                 value={category}
                 placeholder="Enter the Category"
                 onChange={(e) => setCategory(e.target.value)}
+              />
+            </Form.Group>
+            <Form.Group controlId="content">
+              <Form.Label>Due Date</Form.Label>
+              <Form.Control
+                type="date"
+                value={dueDate}
+                onChange={(e) => setDueDate(e.target.value)}
               />
             </Form.Group>
             {loading && <Loading size={50} />}

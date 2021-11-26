@@ -6,7 +6,7 @@ const {
   UpdateNote,
   DeleteNote,
   favoriteNote,
-  getFavorite
+  getFavorite,
 } = require("../controllers/noteControllers");
 const { protect } = require("../middleware/authMiddleware");
 
