@@ -1,11 +1,34 @@
 const asyncHandler = require("express-async-handler");
 const User = require("../models/userModel");
 const generateToken = require("../utils/generateToken");
+<<<<<<< HEAD
+=======
+const crypto = require('crypto');
+const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+>>>>>>> parent of a55f0ba (Update userControllers.js)
 
 const registerUser = asyncHandler(async (req, res) => {
   const { name, email, password, pic } = req.body;
 
   const userExists = await User.findOne({ email });
+
+  const msg = {
+    from: 'noreply@email.com',
+    to: user.email,
+    subject: 'Verify your Email',
+    test: `
+      Hello, thanks for registering on our site.
+      Please copy and paste the address below to verify your account.
+      http//${req.headers.host}/verify-email?token=${user.emailToken}
+    `,
+    html: `
+      <h1>Hello,</h1>
+      <p>Thanks for registering on our site.</p>
+      <Please click the link below to verify your account.</p>
+      <a href="http://${req.headers.host}/verify-email?token${user.emailToken}">Verify your account</a>
+    `
+  }
 
   if (userExists) {
     res.status(400);
