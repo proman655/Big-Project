@@ -8,10 +8,10 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const registerUser = asyncHandler(async (req, res) => {
   const { name, email, password, pic } = req.body;
-
+  console.log(process.env.SENDGRID_API_KEY);
   const msg = {
     from: "0parkjuhwan901@gmail.com",
-    to: "0parkjuhwan901@gmail.com",
+    to: "appleid1226@gmail.com",
     subject: "Verify your Email",
     test: `
         Hello, thanks for registering on our site.

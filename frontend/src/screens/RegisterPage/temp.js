@@ -1,9 +1,11 @@
 const sgMail = require("@sendgrid/mail");
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+sgMail.setApiKey(
+  "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"
+);
 
 const msg = {
   to: "0parkjuhwan901@gmail.com",
-  from: "0parkjuhwan901@gmail.com", // Use the email address or domain you verified above
+  from: "appleid1226@gmail.com", // Use the email address or domain you verified above
   subject: "TESTING",
   text: "and easy to do anywhere, even with Node.js",
   html: "<strong>and easy to do anywhere, even with Node.js</strong>",
@@ -12,4 +14,4 @@ const msg = {
 sgMail
   .send(msg)
   .then((respose) => console.log("Email sent\n", process.env.SENDGRID_API_KEY))
-  .catch((error) => console.log(error.message));
+  .catch((error) => console.log(error.response.body));
