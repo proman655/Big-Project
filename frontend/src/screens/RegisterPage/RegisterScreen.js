@@ -22,9 +22,9 @@ const RegisterScreen = ({ history }) => {
   const { loading, error, userInfo } = userRegister;
 
   useEffect(() => {
-    if (userInfo) {
-      history.push("/mynotes");
-    }
+    // if (userInfo) {
+    //   history.push("/mynotes");
+    // }
   }, [history, userInfo]);
 
   const submitHandler = async (e) => {
