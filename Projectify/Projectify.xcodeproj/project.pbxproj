@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F32733827527E5C00B8118B /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32733727527E5C00B8118B /* Project.swift */; };
+		2F32733A2753C48F00B8118B /* EditProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3273392753C48E00B8118B /* EditProjectViewController.swift */; };
+		2F32733D2754886C00B8118B /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32733C2754886C00B8118B /* EditProfileViewController.swift */; };
+		2F3273402754911800B8118B /* FavoriteProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F32733F2754911800B8118B /* FavoriteProjectsViewController.swift */; };
+		2F3273422754927A00B8118B /* FavoriteProjectsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3273412754927A00B8118B /* FavoriteProjectsTableViewCell.swift */; };
+		2FFA5E6F274E89430010C88E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFA5E6E274E89430010C88E /* AppDelegate.swift */; };
+		2FFA5E71274E89430010C88E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFA5E70274E89430010C88E /* SceneDelegate.swift */; };
+		2FFA5E76274E89430010C88E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFA5E74274E89430010C88E /* Main.storyboard */; };
+		2FFA5E78274E89460010C88E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FFA5E77274E89460010C88E /* Assets.xcassets */; };
+		2FFA5E83274E8C310010C88E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFA5E82274E8C310010C88E /* LoginViewController.swift */; };
+		2FFA5E85274E8C450010C88E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFA5E84274E8C450010C88E /* RegisterViewController.swift */; };
+		2FFA5E87274E9AAD0010C88E /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFA5E86274E9AAD0010C88E /* ProjectCell.swift */; };
+		2FFA5E89274E9B4E0010C88E /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFA5E88274E9B4E0010C88E /* ProjectsViewController.swift */; };
+		2FFA5E92274E9C3D0010C88E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFA5E91274E9C3D0010C88E /* ProfileViewController.swift */; };
+		2FFA5E94274EA3F80010C88E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FFA5E93274EA3F80010C88E /* LaunchScreen.storyboard */; };
+		2FFA5E96274EB2260010C88E /* APIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFA5E95274EB2260010C88E /* APIFunctions.swift */; };
+		2FFBE34027503533007DB98C /* CreateProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFBE33F27503533007DB98C /* CreateProjectViewController.swift */; };
+		2FFBE34227507F89007DB98C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFBE34127507F89007DB98C /* User.swift */; };
+		8BFA8BCD80BE93E9F888858A /* Pods_Projectify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65B44C4BC3F1539AEB3EB40 /* Pods_Projectify.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B039E0F7BA8E338337F51C2 /* Pods-Projectify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Projectify.release.xcconfig"; path = "Target Support Files/Pods-Projectify/Pods-Projectify.release.xcconfig"; sourceTree = "<group>"; };
+		2F32733727527E5C00B8118B /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		2F3273392753C48E00B8118B /* EditProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectViewController.swift; sourceTree = "<group>"; };
+		2F32733C2754886C00B8118B /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		2F32733F2754911800B8118B /* FavoriteProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProjectsViewController.swift; sourceTree = "<group>"; };
+		2F3273412754927A00B8118B /* FavoriteProjectsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteProjectsTableViewCell.swift; sourceTree = "<group>"; };
+		2FFA5E6B274E89430010C88E /* Projectify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Projectify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FFA5E6E274E89430010C88E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2FFA5E70274E89430010C88E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2FFA5E75274E89430010C88E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2FFA5E77274E89460010C88E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FFA5E7C274E89460010C88E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FFA5E82274E8C310010C88E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2FFA5E84274E8C450010C88E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2FFA5E86274E9AAD0010C88E /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
+		2FFA5E88274E9B4E0010C88E /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
+		2FFA5E91274E9C3D0010C88E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = "../New Group/ProfileViewController.swift"; sourceTree = "<group>"; };
+		2FFA5E93274EA3F80010C88E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2FFA5E95274EB2260010C88E /* APIFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFunctions.swift; sourceTree = "<group>"; };
+		2FFBE33F27503533007DB98C /* CreateProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProjectViewController.swift; sourceTree = "<group>"; };
+		2FFBE34127507F89007DB98C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3D6D4B0926EDA65BE2C03F92 /* Pods-Projectify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Projectify.debug.xcconfig"; path = "Target Support Files/Pods-Projectify/Pods-Projectify.debug.xcconfig"; sourceTree = "<group>"; };
+		A65B44C4BC3F1539AEB3EB40 /* Pods_Projectify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Projectify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FFA5E68274E89430010C88E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BFA8BCD80BE93E9F888858A /* Pods_Projectify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F32733B2754884C00B8118B /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				2FFA5E91274E9C3D0010C88E /* ProfileViewController.swift */,
+				2F32733C2754886C00B8118B /* EditProfileViewController.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		2F32733E2754906500B8118B /* favorites */ = {
+			isa = PBXGroup;
+			children = (
+				2F32733F2754911800B8118B /* FavoriteProjectsViewController.swift */,
+				2F3273412754927A00B8118B /* FavoriteProjectsTableViewCell.swift */,
+			);
+			path = favorites;
+			sourceTree = "<group>";
+		};
+		2F9CA7E3274F0C9C0097C82E /* projects */ = {
+			isa = PBXGroup;
+			children = (
+				2FFA5E88274E9B4E0010C88E /* ProjectsViewController.swift */,
+				2FFA5E86274E9AAD0010C88E /* ProjectCell.swift */,
+				2FFBE33F27503533007DB98C /* CreateProjectViewController.swift */,
+				2F3273392753C48E00B8118B /* EditProjectViewController.swift */,
+			);
+			path = projects;
+			sourceTree = "<group>";
+		};
+		2FFA5E62274E89430010C88E = {
+			isa = PBXGroup;
+			children = (
+				2FFA5E6D274E89430010C88E /* Projectify */,
+				2FFA5E6C274E89430010C88E /* Products */,
+				36306C29E6AC0366E152740F /* Pods */,
+				495EA98A502EC7C8D295763A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2FFA5E6C274E89430010C88E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FFA5E6B274E89430010C88E /* Projectify.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FFA5E6D274E89430010C88E /* Projectify */ = {
+			isa = PBXGroup;
+			children = (
+				2FFA5E93274EA3F80010C88E /* LaunchScreen.storyboard */,
+				2FFA5E74274E89430010C88E /* Main.storyboard */,
+				2FFBE34327527DEF007DB98C /* Models */,
+				2FFA5E8C274E9B8F0010C88E /* Launch */,
+				2FFA5E8A274E9B630010C88E /* Home */,
+				2FFA5E6E274E89430010C88E /* AppDelegate.swift */,
+				2FFA5E70274E89430010C88E /* SceneDelegate.swift */,
+				2FFA5E95274EB2260010C88E /* APIFunctions.swift */,
+				2FFA5E77274E89460010C88E /* Assets.xcassets */,
+				2FFA5E7C274E89460010C88E /* Info.plist */,
+			);
+			path = Projectify;
+			sourceTree = "<group>";
+		};
+		2FFA5E8A274E9B630010C88E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2F9CA7E3274F0C9C0097C82E /* projects */,
+				2F32733E2754906500B8118B /* favorites */,
+				2F32733B2754884C00B8118B /* profile */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2FFA5E8C274E9B8F0010C88E /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				2FFA5E82274E8C310010C88E /* LoginViewController.swift */,
+				2FFA5E84274E8C450010C88E /* RegisterViewController.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		2FFBE34327527DEF007DB98C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2FFBE34127507F89007DB98C /* User.swift */,
+				2F32733727527E5C00B8118B /* Project.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		36306C29E6AC0366E152740F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D6D4B0926EDA65BE2C03F92 /* Pods-Projectify.debug.xcconfig */,
+				2B039E0F7BA8E338337F51C2 /* Pods-Projectify.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		495EA98A502EC7C8D295763A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A65B44C4BC3F1539AEB3EB40 /* Pods_Projectify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FFA5E6A274E89430010C88E /* Projectify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FFA5E7F274E89460010C88E /* Build configuration list for PBXNativeTarget "Projectify" */;
+			buildPhases = (
+				D6ED71BCCAEB4B78A89EF8C2 /* [CP] Check Pods Manifest.lock */,
+				2FFA5E67274E89430010C88E /* Sources */,
+				2FFA5E68274E89430010C88E /* Frameworks */,
+				2FFA5E69274E89430010C88E /* Resources */,
+				7ABD72F72434A8EC37092C37 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Projectify;
+			productName = Projectify;
+			productReference = 2FFA5E6B274E89430010C88E /* Projectify.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FFA5E63274E89430010C88E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					2FFA5E6A274E89430010C88E = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 2FFA5E66274E89430010C88E /* Build configuration list for PBXProject "Projectify" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FFA5E62274E89430010C88E;
+			productRefGroup = 2FFA5E6C274E89430010C88E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FFA5E6A274E89430010C88E /* Projectify */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FFA5E69274E89430010C88E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FFA5E94274EA3F80010C88E /* LaunchScreen.storyboard in Resources */,
+				2FFA5E78274E89460010C88E /* Assets.xcassets in Resources */,
+				2FFA5E76274E89430010C88E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7ABD72F72434A8EC37092C37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Projectify/Pods-Projectify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Projectify/Pods-Projectify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Projectify/Pods-Projectify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6ED71BCCAEB4B78A89EF8C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Projectify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FFA5E67274E89430010C88E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FFBE34227507F89007DB98C /* User.swift in Sources */,
+				2FFA5E89274E9B4E0010C88E /* ProjectsViewController.swift in Sources */,
+				2F3273402754911800B8118B /* FavoriteProjectsViewController.swift in Sources */,
+				2FFA5E87274E9AAD0010C88E /* ProjectCell.swift in Sources */,
+				2FFA5E83274E8C310010C88E /* LoginViewController.swift in Sources */,
+				2F3273422754927A00B8118B /* FavoriteProjectsTableViewCell.swift in Sources */,
+				2F32733827527E5C00B8118B /* Project.swift in Sources */,
+				2F32733D2754886C00B8118B /* EditProfileViewController.swift in Sources */,
+				2FFBE34027503533007DB98C /* CreateProjectViewController.swift in Sources */,
+				2FFA5E6F274E89430010C88E /* AppDelegate.swift in Sources */,
+				2FFA5E92274E9C3D0010C88E /* ProfileViewController.swift in Sources */,
+				2FFA5E71274E89430010C88E /* SceneDelegate.swift in Sources */,
+				2FFA5E96274EB2260010C88E /* APIFunctions.swift in Sources */,
+				2F32733A2753C48F00B8118B /* EditProjectViewController.swift in Sources */,
+				2FFA5E85274E8C450010C88E /* RegisterViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2FFA5E74274E89430010C88E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FFA5E75274E89430010C88E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FFA5E7D274E89460010C88E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2FFA5E7E274E89460010C88E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FFA5E80274E89460010C88E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D6D4B0926EDA65BE2C03F92 /* Pods-Projectify.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XNXB22PVY3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Projectify/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = COP4331.Projectify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2FFA5E81274E89460010C88E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B039E0F7BA8E338337F51C2 /* Pods-Projectify.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XNXB22PVY3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Projectify/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = COP4331.Projectify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FFA5E66274E89430010C88E /* Build configuration list for PBXProject "Projectify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FFA5E7D274E89460010C88E /* Debug */,
+				2FFA5E7E274E89460010C88E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FFA5E7F274E89460010C88E /* Build configuration list for PBXNativeTarget "Projectify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FFA5E80274E89460010C88E /* Debug */,
+				2FFA5E81274E89460010C88E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FFA5E63274E89430010C88E /* Project object */;
+}
