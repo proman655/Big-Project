@@ -10,6 +10,7 @@ import CreateNote from "./screens/CreateNote/CreateNote";
 import SingleNote from "./screens/SingleNote/SingleNote";
 import { useState } from "react";
 import ProfileScreen from "./screens/ProfileScreen/ProfileScreen";
+require("dotenv").config();
 
 const App = () => {
   const [search, setSearch] = useState("");
