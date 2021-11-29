@@ -65,6 +65,7 @@ class ProjectsViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        APICaller.setNumberOfProjects(count: projects.count)
         return projects.count
     }
     
@@ -87,6 +88,7 @@ class ProjectsViewController: UIViewController, UITableViewDataSource, UITableVi
         let edit = UIContextualAction(style: .normal, title: "Edit") { _, _, _ in
             print("Edit button pressed")
             self.projectToEditId = self.projects[indexPath.row]._id
+            self.APICaller.setSelectedProjectId(id: self.projectToEditId )
             self.performSegue(withIdentifier: "editProject", sender: self)
             self.tableView.reloadData()
         }
@@ -97,6 +99,8 @@ class ProjectsViewController: UIViewController, UITableViewDataSource, UITableVi
             self.APICaller.deleteProject(id: self.projects[indexPath.row]._id)
             self.projects.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+            let projectCount = self.APICaller.getNumberOfProjects() - 1
+            self.APICaller.setNumberOfProjects(count: projectCount)
             self.tableView.reloadData()
         }
         
@@ -105,31 +109,17 @@ class ProjectsViewController: UIViewController, UITableViewDataSource, UITableVi
         let swipeConfiguration = UISwipeActionsConfiguration(actions: [delete, edit])
         return swipeConfiguration
     }
-    
-    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let favorite = UIContextualAction(style: .normal, title: "Favorite") { (action, view, success) in
-            print("Favorite button pressed")
-            self.APICaller.favoriteProject(id: self.projects[indexPath.row]._id)
-            success(true)
-        }
-        favorite.image = UIImage(systemName: "star.fill")
-        favorite.backgroundColor = .systemTeal
-        
-        return UISwipeActionsConfiguration(actions: [favorite])
-    }
 
     @IBAction func doLogout(_ sender: Any) {
-        
+        dismiss(animated: true, completion: nil)
     }
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if segue.identifier == "editProject" {
-            
             guard let editVC = segue.destination as? EditProjectViewController else {return}
             editVC.projectTotEditId = self.projectToEditId
-            
         } else {
             print("could not find segue")
         }

@@ -51,11 +51,14 @@ class RegisterViewController: UIViewController {
                 "message":""
             ]
             
-            APICaller.registerUser(params: parameters)
-
-            statusLabel.text = "Yay"
-            self.performSegue(withIdentifier: "registerToHome", sender: self)
- 
+            let registerStatus = APICaller.registerUser(params: parameters)
+            if(registerStatus == 1) {
+                statusLabel.text = APICaller.getRegisterStatus()
+            } else if (registerStatus == 0){
+                self.performSegue(withIdentifier: "loginToHome", sender: self)
+            } else {
+                print("Press Button Again")
+            }
         }
     }
     

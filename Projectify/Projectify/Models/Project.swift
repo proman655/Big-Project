@@ -14,5 +14,6 @@ public class Project: Codable {
     var category:String
     var user:String
     var dueDate:String
+    var favorite:Bool
 }
 

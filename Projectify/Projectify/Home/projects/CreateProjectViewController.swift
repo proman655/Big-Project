@@ -42,10 +42,11 @@ class CreateProjectViewController: UIViewController {
         {
             creteProjectStatus.text = "Please Fill All Fields"
         } else {
-            
             let APICaller = APIFunctions()
             APICaller.newProject(title: title!, category: category!, description: description!, dueDate: dateFormater.string(from: dueDate))
             creteProjectStatus.text = "Project Created!"
+            let projectCount = APICaller.getNumberOfProjects() + 1
+            APICaller.setNumberOfProjects(count: projectCount)
             dismiss(animated: true, completion: nil)
         }
         

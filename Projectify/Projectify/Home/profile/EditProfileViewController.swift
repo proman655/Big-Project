@@ -37,7 +37,7 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
             "name":newName
         ]
         
-        APICaller.editProfile(params: parameters)
+        APICaller.editProfile(editProfileParaameters: parameters)
         dismiss(animated: true, completion: nil)
     }
     
