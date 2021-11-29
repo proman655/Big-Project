@@ -16,7 +16,7 @@ const noteSchema = mongoose.Schema(
     },
     favorite: {
       type: Boolean,
-      required: true,
+      required: false,
       default: false,
     },
     dueDate: {

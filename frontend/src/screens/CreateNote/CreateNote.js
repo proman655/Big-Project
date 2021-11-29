@@ -101,7 +101,7 @@ function CreateNote({ history }) {
               onClick={resetHandler}
               variant="danger"
             >
-              Reset Feilds
+              Reset Fields
             </Button>
           </Form>
         </Card.Body>

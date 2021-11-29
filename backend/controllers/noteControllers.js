@@ -64,7 +64,7 @@ const favoriteNote = asyncHandler(async (req, res) => {
 });
 
 const UpdateNote = asyncHandler(async (req, res) => {
-  const { title, content, category, dueDate } = req.body;
+  const { title, content, category, dueDate, favorite } = req.body;
 
   const note = await Note.findById(req.params.id);
 
@@ -78,6 +78,7 @@ const UpdateNote = asyncHandler(async (req, res) => {
     note.content = content;
     note.category = category;
     note.dueDate = dueDate;
+    note.favorite = favorite;
 
     const updatedNote = await note.save();
     res.json(updatedNote);
